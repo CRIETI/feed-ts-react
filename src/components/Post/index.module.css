@@ -1,0 +1,121 @@
+.post {
+    width: 100%;
+    background: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--gray-300);
+    padding: 2.5rem;
+  }
+  
+  /*primeiro nível dentro do post */
+  .post > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .post > header time {
+    font-size: 0.875rem;
+    color: var(--gray-900);
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .profile img {
+    box-sizing: initial; /* FAZ COM QUE QUANDO ADICIONA BORDA, OCUPE UM ESPAÇO A MAIS e não exprema*/
+    width: 3rem;
+    heigth: 3rem;
+    border-radius: 8px;
+    border: 6px solid var(--gray-800);
+    outline: 2px solid var(--green-100);
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .description strong {
+    color: var(--gray-800);
+    line-height: 1.6;
+  }
+  
+  .description span {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    line-height: 1.6;
+  }
+  
+  .content {
+    line-height: 1.6;
+    color: var(--gray-900);
+    margin-top: 1.5rem;
+  }
+  
+  .content p {
+    margin-top: 1rem;
+  }
+  
+  .content a {
+    margin-top: 1rem;
+    color: var(--green-100);
+    text-decoration: none;
+  }
+  
+  .content a:hover {
+    color: var(--green-200);
+  }
+  
+  .post form {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gray-300);
+  }
+  
+  .post form > strong {
+    line-height: 1.6;
+    color: var(--gray-900);
+  }
+  
+  .post form textarea {
+    width: 100%;
+    background-color: var(--gray-100);
+    border: 0;
+    resize: none;
+    height: 6rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--gray-800);
+    line-height: 1.4;
+    margin-top: 1rem;
+  }
+  
+  .post form button[type="submit"] {
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 0;
+    background-color: var(--green-100);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+  
+    transition: backgroundcolor 0.1s;
+  }
+  
+  .post form button[type="submit"]:hover {
+    background-color: var(--green-200);
+  }
+  
+  .commentForm button[type="submit"]:hover {
+    background: var(--green-300);
+  }
+  
+  .comments {
+    margin-top: 2rem;
+  }
+  

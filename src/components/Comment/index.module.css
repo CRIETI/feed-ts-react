@@ -1,0 +1,87 @@
+.comment {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .comment > img {
+    width: 4.5rem;
+    height: 3.8rem;
+    border-radius: 8px;
+  }
+  
+  .commentArea {
+    flex: 1; /*ocupar o máximo de espaço possível pq a div pai possui display flex*/
+  }
+  
+  .content {
+    background: var(--gray-100);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .content header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .authorTime {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .authorAndTime strong {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--gray-900);
+  }
+  
+  .authorAndTime time {
+    font-size: 0.75rem;
+    line-height: 1.6;
+    color: var(--gray-900);
+  }
+  
+  .content header button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-900);
+    cursor: pointer;
+    /*line-height: 0; Somente utilizado para quando o botão tiver em focus
+     border-radius: 2px; */
+  }
+  
+  .content header button:hover {
+    color: var(--grenn-100);
+  }
+  
+  .content p {
+    margin-top: 1rem;
+    color: var(--gray-900);
+  }
+  
+  .commentArea footer {
+    margin-top: 1rem;
+  }
+  
+  .commentArea footer button {
+    background: transparent;
+    border: 0; /*resetar estilo padrão do html*/
+    color: var(--gray-400);
+    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+  
+    border-radius: 2px;
+  }
+  
+  .commentArea footer button:hover {
+    color: var(--green-100);
+  }
+  
+  .commentArea footer button svg {
+    margin-right: 0.5rem;
+  }
+  
